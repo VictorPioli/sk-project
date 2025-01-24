@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-    width: 200px; /* Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção */
-    object-fit: contain; /* Garante que a imagem não seja cortada */
+    width: 175px;
+    height: auto; 
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+    padding: 10px 0;
+    &:hover {
+    transform: scale(1.2);
+    }
+
 `;
 
 export const MainDiv = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
 
     border: 2px solid red; 
@@ -24,11 +30,20 @@ export const MainDiv = styled.div`
     color: white;
 `;
 
-export const ContainerInputs = styled.div`
+export const Inputs = styled.div`
     width: 80%;
     padding: 10px;
     input {
     width: 100%;
-    height: 20px;
+    height: 30px;
     }
+`
+
+export const ContainerInputs = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
 `

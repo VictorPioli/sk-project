@@ -1,21 +1,23 @@
 import React from "react";
-import Logo from '../../assets/Logo.png'
-import { ContainerInputs, Img, MainDiv } from "./styles";
+import Logo from '../../assets/LogoRed.png'
+import { Inputs, Img, MainDiv, ContainerInputs } from "./styles";
 function Login() {
     return (
-        <>
+       
         <MainDiv>
-            <Img src={Logo} alt="logo-sk" />
             <ContainerInputs>
+            <Img src={Logo} alt="logo-sk" />
+            <Inputs>
                 <label htmlFor="email">Email:</label>
                 <input type="email" id="email"/>
-            </ContainerInputs>
-            <ContainerInputs>
+            </Inputs>
+            <Inputs>
                 <label htmlFor="password">Senha:</label>
                 <input type="password" id="password"/>
+            </Inputs>
             </ContainerInputs>
         </MainDiv>
-        </>
+        
     )
 }
 
